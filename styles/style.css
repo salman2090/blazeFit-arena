@@ -1,10 +1,16 @@
+/* Fonts */
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 .inter-font{
     font-family: "Inter", serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
-
+.secondary-font{
+    font-family: 'Miama', sans-serif;
+    font-weight: 400;
+    font-size: 8rem;
+}
 
 /* shared styles */
 body{
@@ -35,8 +41,9 @@ main{
 .section-description{
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 50px;
+    font-size: 1rem;
+    line-height: 30px;
 }
-
 .text-white{
     color: white;
 }
@@ -46,6 +53,8 @@ main{
 .text-center{
     text-align: center;
 }
+
+
 /* nav related styles */
 .navbar{
     justify-content: space-between;
@@ -81,7 +90,6 @@ main{
 
 /* banner Styles */
 .bg-color{
-    /* background:linear-gradient(180deg,rgba(17, 17, 17, 0.9),rgba(119, 119, 119, 0.7) 100%); */
     background: linear-gradient(180.00deg,rgba(19, 18, 18, 0.979),rgb(17, 17, 17) 100%);
 }
 .banner{
@@ -94,12 +102,12 @@ main{
 }
 .banner-title{
     color: white;
-    font-size: 5rem;
-    
+    font-size: 5rem;  
 }
 .banner-description{
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 28px;
+    line-height: 25px;
 }
 #banner-text{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -134,6 +142,7 @@ main{
     width: 100%;
 }
 
+
 /* Habit section styles */
 .habits-container{
     
@@ -151,6 +160,7 @@ main{
     margin-right: 40px;
 }
 
+
 /* Run section styles */
 .run-container{
     background-color: rgba(34, 34, 34, 1);
@@ -161,7 +171,6 @@ main{
     padding: 41px 55px;
     justify-content: space-around;
     align-items: center;
-
 }
 .run-info{
     margin:41px 165px 41px 54px;
@@ -170,8 +179,8 @@ main{
 .run-container img{
     width: 30%;
     border-radius: 18px;
-
 }
+
 
 /* BMI section styles */
 .bmi-container{
@@ -194,8 +203,7 @@ main{
     margin: 50px auto;
 }
 .chart-info{
-    border-collapse: collapse;
-    
+    border-collapse: collapse;   
 }
 .chart-info th, td{
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -210,15 +218,12 @@ main{
     grid-template-columns: repeat(2, 1fr);
     color: rgba(255, 255, 255, 0.6);
     gap: 12px;
-    
-
 }
 .user-inputs input{
     background-color: rgba(255, 255, 255, 0.1);
     padding: 15px;
     border: none;
-    border-radius: 8px;
-    
+    border-radius: 8px;  
 }
 .text-input{
     background-color: rgba(255, 255, 255, 0.1);
@@ -234,8 +239,11 @@ main{
     display: block;
 }
 
-/* Team section styles */
 
+/* Team section styles */
+.team-container{
+    padding-bottom: 88px;
+}
 .team-intro{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -257,8 +265,63 @@ main{
 .t-name{
     margin-top: -70px;
     padding-left: 20px;
+    
 }
 .t-designation{
     margin-top: -15px;
     padding-left: 20px;    
+}
+
+
+/* Footer related styles */
+footer{ 
+    background-color: rgba(17, 17, 17, 0.959);
+    padding: 66px 190px 35px;
+}
+.footer-column{
+    display: grid;
+    grid-template-columns: 40% repeat(2, 1fr);
+}
+.brand-footer{
+    color: #E6533C;
+    font-size: 4rem;
+    font-weight: 800;   
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.footer-info{
+    margin-left: 130px;
+}
+
+.footer-info li{
+    list-style: none;
+    margin-bottom: 20px;
+    
+}
+
+.footer-info a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    
+}
+.footer-info ul {    
+    padding-inline-start: 0px;
+}
+.footer-col-heading{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 39px;
+}
+#footer-hr{
+    border: .05px solid rgba(255, 255, 255, 0.1);
+}
+#copyright-text{
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 40px;
 }
