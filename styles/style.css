@@ -7,7 +7,12 @@
 
 
 /* shared styles */
-
+body{
+    margin: 0 auto     ;
+}
+main{
+    background-color: black;
+}
 .d-flex{
     display: flex;
 }
@@ -31,6 +36,7 @@
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 58px;
 }
+
 .text-white{
     color: white;
 }
@@ -66,9 +72,10 @@
     border-radius: 46px;
 }
 
+
 /* banner Styles */
 .bg-color{
-    background: linear-gradient(180.00deg,rgba(8, 8, 8, 0.952),#000000f1 100%);
+    background:linear-gradient(180deg,rgba(17, 17, 17, 0.9),rgba(119, 119, 119, 0.7) 100%);
     /* background: linear-gradient(180.00deg,rgba(17, 17, 17, 0.719),rgba(119, 119, 119, 0.326) 100%); */
 }
 .banner{
@@ -123,7 +130,7 @@
 
 /* Habit section styles */
 .habits-container{
-    background-color: black;
+    
     padding-top: 100px;
     text-align: center;
 }
@@ -136,4 +143,26 @@
     gap: 40px;
     justify-content:center;
     margin-right: 40px;
+}
+
+/* Run section styles */
+.run-container{
+    background-color: rgba(34, 34, 34, 1);
+    width: 70%;
+    margin: 100px auto;
+    border: none;
+    border-radius: 18px;
+    padding: 41px 55px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.run-info{
+    margin:41px 165px 41px 54px;
+    /* margin-right: 165px; */
+}
+.run-container img{
+    width: 30%;
+    border-radius: 18px;
+
 }
