@@ -57,19 +57,25 @@ main{
 
 /* nav related styles */
 .navbar{
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     padding: 56px 190px 94px;
+    max-width: 70%;
+    margin: 0 auto;
+    
 }
 .brand{
     color: #E6533C;
     font-size: 2.25rem;
     font-weight: 800;
+    width: 100%;
 }
 .nav-links{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
     padding: none;
     padding: 12px 5px;
+    width: 100%;
     
 }
 .nav-item{
@@ -93,7 +99,7 @@ main{
     background: linear-gradient(180.00deg,rgba(19, 18, 18, 0.979),rgb(17, 17, 17) 100%);
 }
 .banner{
-    max-width: 1060px;
+    max-width: 70%;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -109,9 +115,6 @@ main{
     margin-bottom: 28px;
     line-height: 25px;
 }
-#banner-text{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 #download-btn{
     color: #FFFFFF;
     background-color: #000000;
@@ -122,21 +125,52 @@ main{
     padding: 16px 46.5px;
     margin-left: 14px;
 }
-.transparent-btn{
+.transparent-tutorial-btn{
+    background-color: rgba(48, 48, 48, 0.54);
+    padding: 17px 24px;
+    color: white;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    position: absolute;
+    bottom: 16%;
+    right: 28%;  
+    align-items: center;
+    gap: 10px;
+    
+}
+.dot {
+    height: 40px;
+    width: 40px;
+    background-color: #E6533C;
+    border-radius: 50%;
+  }
+.transparent-workout-btn{
     background-color: rgba(255, 255, 255, 0.10);
     padding: 17px 24px;
     color: white;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     position: absolute;
-    bottom: 450px;
-    right: 350px;
+    bottom: 48%;
+    right: 11%;
 }
-.vid-count{
+.vid-count-tutorial{
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 8px;
+}
+.vid-count-workout{
     font-weight: 900;
     font-size: 2.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 .vid-text{
     color: rgba(255, 255, 255, 0.65);
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 #banner-img{
     width: 100%;
@@ -148,6 +182,8 @@ main{
     
     padding-top: 100px;
     text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
 }
 
 .movement img,.time img,.practice img,.weight-loss img{
