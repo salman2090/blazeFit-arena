@@ -43,6 +43,9 @@ main{
 .text-gray{
     color: rgba(255, 255, 255, 0.5);
 }
+.text-center{
+    text-align: center;
+}
 /* nav related styles */
 .navbar{
     justify-content: space-between;
@@ -78,8 +81,8 @@ main{
 
 /* banner Styles */
 .bg-color{
-    background:linear-gradient(180deg,rgba(17, 17, 17, 0.9),rgba(119, 119, 119, 0.7) 100%);
-    /* background: linear-gradient(180.00deg,rgba(17, 17, 17, 0.719),rgba(119, 119, 119, 0.326) 100%); */
+    /* background:linear-gradient(180deg,rgba(17, 17, 17, 0.9),rgba(119, 119, 119, 0.7) 100%); */
+    background: linear-gradient(180.00deg,rgba(19, 18, 18, 0.979),rgb(17, 17, 17) 100%);
 }
 .banner{
     max-width: 1060px;
@@ -182,8 +185,6 @@ main{
 .bmi{
     background-color: rgba(34, 34, 34, 1);
     justify-content: center;
-    
-    /* align-items: center; */
 }
 .bmi h4{
     font-size: 28px;
@@ -231,4 +232,33 @@ main{
 }
 #calculate-btn{
     display: block;
+}
+
+/* Team section styles */
+
+.team-intro{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(255, 255, 255, 0.1);
+    gap:20px;
+    width: 70%;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: start;
+}
+.trainer-img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+.t-name{
+    margin-top: -70px;
+    padding-left: 20px;
+}
+.t-designation{
+    margin-top: -15px;
+    padding-left: 20px;    
 }
