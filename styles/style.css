@@ -34,11 +34,14 @@ main{
 }
 .section-description{
     color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 58px;
+    margin-bottom: 50px;
 }
 
 .text-white{
     color: white;
+}
+.text-gray{
+    color: rgba(255, 255, 255, 0.5);
 }
 /* nav related styles */
 .navbar{
@@ -165,4 +168,67 @@ main{
     width: 30%;
     border-radius: 18px;
 
+}
+
+/* BMI section styles */
+.bmi-container{
+    margin: 88px auto;
+    justify-content: center;
+}
+.bmi-heading{
+    margin: 0 auto;
+    width: 40%;
+}
+.bmi{
+    background-color: rgba(34, 34, 34, 1);
+    justify-content: center;
+    
+    /* align-items: center; */
+}
+.bmi h4{
+    font-size: 28px;
+    font-weight: 900;
+}
+.chart{
+    margin: 50px auto;
+}
+.chart-info{
+    border-collapse: collapse;
+    
+}
+.chart-info th, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 13px 18px;
+}
+.bmi-calculation{
+    width: 40%;
+    margin: 50px auto;
+}
+.user-inputs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: rgba(255, 255, 255, 0.6);
+    gap: 12px;
+    
+
+}
+.user-inputs input{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    
+}
+.text-input{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-bottom: 34px;
+    width: 96%;
+    gap: 12px;
+}
+#calculate-btn{
+    display: block;
 }
