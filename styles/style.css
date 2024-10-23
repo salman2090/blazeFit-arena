@@ -19,7 +19,7 @@ body{
 main{
     background-color: black;
 }
-.d-flex{
+.d-flex, .nav-links>ul{
     display: flex;
 }
 .btn-primary{
@@ -58,25 +58,30 @@ main{
 
 /* nav related styles */
 .navbar{
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 56px 190px 94px;
-    max-width: 70%;
+    padding: 56px auto 94px;
     margin: 0 auto;
+    width: 80%;
     
 }
 .brand{
     color: #E6533C;
     font-size: 2.25rem;
     font-weight: 800;
-    width: 100%;
+    /* width: 100%; */
+    /* text-align: start; */
+    margin-right: 70px;
 }
-.nav-links{
+.nav-links ul{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
     padding: none;
     padding: 12px 5px;
-    width: 100%;
+
+}
+.bar-icon{
+    display: none;
 }
 .nav-item{
     list-style: none;
@@ -99,9 +104,9 @@ header{
     background: linear-gradient(180.00deg,rgba(19, 18, 18, 0.979),rgb(17, 17, 17) 100%);
 }
 .banner{
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .banner-title{
@@ -135,8 +140,8 @@ header{
     border: 0.5px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     position: absolute;
-    top:92%;
-    right:32%;  
+    bottom:12%;
+    right: 28%;  
     align-items: center;
     gap: 10px;
 }
@@ -148,31 +153,38 @@ header{
   }
 .transparent-workout-btn{
     background-color: rgba(255, 255, 255, 0.10);
-    padding: 17px 24px;
+    padding: 17px 15px;
     color: white;
     border: 0.5px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     position: absolute;
-    bottom: 35%;
-    right: 10%;
+    bottom: 61%;
+    right: 7%;
 }
 .vid-count-tutorial{
     font-weight: 900;
     font-size: 1.5rem;
     margin-block-start: 0;
     margin-block-end: 0;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
 .vid-count-workout{
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-block-start: 0;
     margin-block-end: 0;
+    
 }
 .vid-text{
     color: rgba(255, 255, 255, 0.65);
     margin-block-start: 0;
     margin-block-end: 0;
+}
+.banner-figure{
+    /* margin: 0 auto; */
+}
+.banner{
+    position: relative;
 }
 #banner-img{
     width: 100%;
@@ -328,8 +340,8 @@ header{
 /* Footer related styles */
 footer{ 
     background-color: rgba(17, 17, 17, 0.959);
-    padding:35px;
-    text-align: center;
+    padding:65px 190px;
+    /* text-align: center; */
 }
 .footer-column{
     display: grid;
@@ -380,10 +392,30 @@ footer{
 
 /* Responsive media query  */
 @media screen and (max-width:576px) {
+
+   .transparent-tutorial-btn{
+    bottom: 17.5%;
+    right: 51%;
+
+   }
+   .transparent-workout-btn{
+    bottom: 34%;
+    right: 0%;
+   }
+   .transparent-tutorial-btn .vid-count-tutorial{
+    font-size: 1rem;
+   }
+   .transparent-workout-btn .vid-count-workout{
+    font-size: 1.5rem;
+   }
+   .vid-text{
+    font-size: 0.8rem;
+   }
     .footer-column,
     .team-intro{
         grid-template-columns: 1fr;
     }
+    .banner,
     .nutrition,
     .bmi,
     .habits-info,
@@ -396,6 +428,15 @@ footer{
     }
     .user-inputs input{
         width: 80%;
+        
+    }
+    .nav-links ul{
+        display: none;
+    }
+    .bar-icon{
+        display: block;
+        color: #FFFFFF;
+        border: none;
         
     }
 }
